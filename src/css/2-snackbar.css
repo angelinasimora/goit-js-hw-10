@@ -1,0 +1,95 @@
+.field {
+    display: flex;
+    flex-direction: column;
+}
+
+.field .value {
+    font-size: 40px;
+    line-height: 1.2;
+    letter-spacing: 0.04em;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.field .label {
+    font-size: 16px;
+    line-height: 1.5;
+    text-transform: uppercase;
+}
+
+.delay-label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+    width: fit-content;
+}
+
+.delay-label input {
+    margin-top: 8px;
+    border: 1px solid #808080;
+    border-radius: 4px;
+    width: 360px;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    padding: 8px 16px;
+}
+
+.delay-label input:hover {
+    border-color: #000;
+}
+
+.delay-label input:focus {
+    border-color: #4e75ff;
+}
+
+.form fieldset {
+    border-radius: 4px;
+    width: 362px;
+    padding: 24px 48px 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+}
+
+.form fieldset:hover {
+    border-color: #000000a1;
+}
+
+.form fieldset label {
+    font-size: 16px;
+    line-height: 1.5;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.form fieldset label input {
+    border: 1px solid #757575;
+    border-radius: 14px;
+    width: 20px;
+    height: 20px;
+}
+
+.form button {
+    border-radius: 8px;
+    padding: 8px 16px;
+    width: 360px;
+    height: 40px;
+    background: #4e75ff;
+    margin-left: 0;
+    margin-top: 24px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #fff;
+    cursor: pointer;
+}
+
+.form button:hover {
+    background: #6c8cff;
+}
