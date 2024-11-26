@@ -86,5 +86,5 @@ function updateTimerUI({ days, hours, minutes, seconds }) {
 
 iziToast.show({
   title: 'Hey',
-  message: 'What would you like to add?'
+  message: 'How much time do you need?'
 });
