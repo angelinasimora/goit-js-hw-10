@@ -25,9 +25,9 @@ const options = {
 
     if (selectedDate <= now) {
       iziToast.error({
-        title: 'Invalid Date',
-        message: 'Please choose a date in the future.',
-        position: 'topRight',
+        title: "Invalid Date",
+        message: "Please choose a date in the future.",
+        position: "topRight",
       });
       startButton.disabled = true;
     } else {
@@ -50,6 +50,7 @@ startButton.addEventListener("click", () => {
 
     if (timeDiff <= 0) {
       clearInterval(timerId);
+      resetUI(); // Активує інпут та залишає кнопку неактивною
       alert("Time is up!");
       return;
     }
@@ -81,10 +82,14 @@ function updateTimerUI({ days, hours, minutes, seconds }) {
   secondsEl.textContent = String(seconds).padStart(2, "0");
 }
 
+// Скидання інтерфейсу після завершення таймера
+function resetUI() {
+  dateInput.disabled = false; // Інпут стає активним
+  startButton.disabled = true; // Кнопка залишається неактивною
+}
 
-
-
+// Початкове повідомлення від iziToast
 iziToast.show({
-  title: 'Hey',
-  message: 'How much time do you need?'
+  title: "Hey :)",
+  message: "How much time do you need?",
 });
